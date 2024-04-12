@@ -5,6 +5,15 @@
 */
 
 function isAnagram(str1, str2) {
+    let s1 = (s) => {
+        return s.split("").sort().join("");
+    };
+
+    newstring = s1(str1.toLowerCase());
+    newstring2 = s1(str2.toLowerCase());
+    return newstring == newstring2;
+
+
 
 }
 
