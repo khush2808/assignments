@@ -6,9 +6,11 @@
 */
 
 function countVowels(str) {
-    for (i in str){
-      if(i in ['a','e','i','o','u','A','E','I','O','U']){
-
+  let ans =0;
+    for (let char of str.split('')){
+      if(['a','e','i','o','u','A','E','I','O','U'].indexOf(char) !== -1){
+        ans++;
+      } 
     }
     return ans; 
 }
